@@ -1,22 +1,131 @@
 <!DOCTYPE html>
 <html>
   <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <style>
-       body{
-       background:linear-gradient(rgba(255, 255,255 , 0.5),rgba(255, 255, 255, 0.5)), url(furina.jpg) no-repeat center center fixed ;
-       background-size:cover;       
-       margin:0;
-       
+  	<meta charset=UTF-8">
+  	<meta name="viewport" content="width=devices-width, initial-scale=1.0">
+    <style>
+    	body{
+       	background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)) , url(furina.jpg)  no-repeat center center fixed;
+           margin:0px;
+   }
+        .container {
+       	display:flex;
+           justify-content:center;
+           align-items:center;      
+           height:100vh;
+	}
+    	.kotak{
+          	width:100vw;
+              height:30px;
+              background:gray;
+        }
+       .title{
+        	display:flex;
+            justify-content:center;
+            align-items:top;
+        	height:100vh;
+            
+        }
+        .desc{
+        	display:flex; 
+             justify-content:center; 
+             height:100vh;
+             gap:5px;
+
        }
-    
-     </style>
-   </head>
-   <body> 	
-      <div style="display: flex; align-items:center; justify-content:center; height: 100vh;">
-         <img src="furina.jpg" style="width: 200px; height: 200px; border-radius:50%; object-fit:cover;">
+       .paragraph{
+       	display:flex;
+           justify-content:left;
+           align-items:top;
+           height:10vh;
+           margin-top:-110vh;
+           margin-left:20px; 
+           position:relative;
+           }
+       .paragraph2{
+       	display:flex;
+           justify-content:left;
+           align-items:top;
+           height:10vh;
+           margin-top:50vh;
+           margin-left:20px; 
+           }
+    </style>
+  <header>
+     <div class="kotak ">
+     	    <div style="margin-top:1px;">
+                <button onclick="javascript:window.close()"><img src="exit.jpg" style="width:5vw; height:3vh;" ></button>
+            </div>
+     </div>
+ </header>
+  <body>
+  	<form>
+  	<div class="container">
+     <img src="furina.jpg" style=" width:60vw; height:30vh; border-radius:50%; object-fit:contain; ">
+     </div>	
+     <div class="title">
+        <details style="margin-top:-200px;">
+        	<summary style="font-size:28; text-align:center;"><b>Furina</b></summary><br>
+              <div class="desc" >
+                <img src="hydro.png" width=50px height=50px><br><p>Hydro</p>
+                <img src="sword.png" width=50px height=50px><br>Sword 
+                <img src="fontaine.png" width=50px height=50px><br>Fontaine
+               </div>              
+          </details>
       </div>
-      <img src="hydro.png" style="width:300px; height:300px;">
-   </body>
-   </html>
+      <div class="paragraph">
+      	<details>
+               <summary style="font-size:24;"><b>Build Support Furina</b></summary>
+                   <details>
+                   	<summary><b>Weapon</b></summary>
+                        <ul>
+                        	<li> Fleuve Cendre Ferryman</li>
+                        </ul>
+                   </details>
+                   <details>
+                   	<summary><b>Talent Priority</b></summary>
+                        <ol>
+                        	<li>Elemental Skill</li>
+                            <li>Elemental Burst</li>
+                            <li>Normal Attack</li>
+                        </ol>
+                   </details>
+                   <details>
+                   	<summary><b>Artifact</b></summary>
+                        <ul>
+                        	<li> Golden Troupe(4set)</li>
+                            <li>Vourukasha's Glow(2set)</li>
+                            <li>Venacity of the Millelith(2set)</li>
+                        </ul>
+                   </details>
+      	</details>
+      </div>
+      <div class="paragraph2">
+       	<details>
+               <summary style="font-size:24;"><b>Build DPS Furina</b></summary>
+                   <details>
+                   	<summary><b>Weapon</b></summary>
+                        <ul>
+                        	<li>Fleuve Cendre Ferryman</li>
+                        </ul>
+                   </details>
+                   <details>
+                   	<summary><b>Talent Priority</b></summary>
+                        <ol>
+                        	<li>Elemental Skill</li>
+                            <li>Elemental Burst</li>
+                            <li>Normal Attack</li>
+                        </ol>
+                   </details>
+                   <details>
+                   	<summary><b>Artifact</b></summary>
+                        <ul>
+                        	<li>Golden Troupe(4set)</li>
+                        </ul>
+                   </details>
+      	</details>
+      </div>
+      </form>
+  </body>
+  </head>
+</html>
